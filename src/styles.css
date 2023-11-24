@@ -1,1 +1,102 @@
 /* You can add global styles to this file, and also import other style files */
+
+.navbar {
+    background-color: rgb(37, 70, 70);
+    /* Estilos personalizados da barra de navegação aqui */
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font: Helvetica;
+    font-size: 25px;  
+    font-display: center;
+}
+.navbar a {
+    color: #F0FFFF;
+  }
+
+.nav {
+    background-color: rgb(37, 70, 70);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font: Helvetica;
+    font-size: 25px;  
+    font-display: center;
+}
+
+.nav-item {
+    font-size:30px;
+    text-decoration: none;
+}
+.nav-item a {
+    color: #F0FFFF;
+}
+
+.login-link a {
+    font-size: 15px;
+}
+
+.nav-link {
+    font-size: 15px;
+}
+
+.geral {
+    background-color: rgb(146, 213, 213);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font: Helvetica;
+    font-size: 18px;
+    font-display: center;
+    line-height: 1.8em;
+    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex; 
+    flex-direction: column;
+    height: 100%;
+}
+
+.corpo {
+    width: 100%;
+    background-color: rgb(146, 213, 213);
+}
+
+
+.btn-primary {
+    --bs-btn-color: rgb(156, 223, 223);
+    --bs-btn-bg: rgb(37, 70, 70);
+    --bs-btn-border-color: rgb(37, 70, 70);
+    --bs-btn-hover-color: rgb(156, 223, 223);
+    --bs-btn-hover-bg: rgb(47, 135, 135);
+    --bs-btn-hover-border-color: rgb(20, 53, 53);
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: rgb(156, 223, 223);
+    --bs-btn-active-bg: rgb(60, 154, 154);
+    --bs-btn-active-border-color: rgb(60, 209, 209);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: rgb(156, 223, 223);
+    --bs-btn-disabled-bg: rgb(37, 70, 70);
+    --bs-btn-disabled-border-color: rgb(37, 70, 70);
+}
+
+.btn {
+    --bs-btn-color: rgb(247, 247, 247);
+    --bs-btn-hover-bg: rgb(47, 135, 135);
+    --bs-btn-hover-border-color: rgb(20, 53, 53);
+    
+}
+
+.pagination {
+    --bs-pagination-color:  rgb(37, 70, 70);
+    --bs-pagination-bg:  rgb(79, 164, 159);
+    --bs-pagination-border-color: rgb(37, 70, 70);
+    --bs-pagination-hover-border-color:rgb(143, 203, 203);
+}
+
+.detalhe-footer{
+    font-size: 15px;
+    color: rgb(109, 133, 133);
+}
+
+
+html {
+    height: 100%;
+}

@@ -1,0 +1,7 @@
+.categoria {
+    font-size: 10px;
+}
+
+.table tr.border-bottom {
+    border-bottom: 1px solid #000 !important;
+}

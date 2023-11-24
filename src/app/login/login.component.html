@@ -1,0 +1,157 @@
+<div class="geral">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 p-3 align-items-center">
+                <div class="imag1 text-center" style="background-color:rgb(146, 213, 213)">
+                    <div class="Titulo"><br>
+                        <h2>Já tenho cadastro</h2>
+                        <form action="/action_page.php">
+                            <div class="mb-3 mt-3">
+                                <label for="email">Login:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Digite e-mail de login" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="pwd">Password:</label>
+                                <input type="password" class="form-control" id="pwd" placeholder="Senha" name="pswd" required>
+                            </div>
+                            <div class="form-check mb-3">
+                                <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="remember"> Lembrar-me
+                                </label>
+                            </div>
+                            <a href="./vitrine" class="d-block text-decoration-none">
+                                <button type="submit; button;" class="btn btn-primary">Entrar</button>
+                            </a>  
+                            <div>
+                                <br>
+                                <form action="/action_page.php">
+                                    <a class="Paragrafo1" href="#myModal" data-bs-toggle="modal" >Esqueci a senha</a>                                        
+                                </form>
+                            </div>
+                        </form>
+                    </div>
+                </div>   
+            </div>
+            <div class="col-sm-6 p-3 align-items-center">
+                <div class="text-center" style="background-color:rgb(146, 213, 213)">
+                    <div class="Titulo"><br><br>
+                        <h3>Quero me cadastrar!</h3>
+                        <form action="/action_page.php">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cadastro">Clique Aqui</button>  
+                            <br> 
+                        </form>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- The Modal -->
+<div class="modal fade" id="cadastro">
+    <div class="modal-dialog">
+        <div class="modal-content">
+  
+            <!-- Modal Header -->
+            <div class="modal-header">
+            <h4 class="modal-title">Cadastro</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+    
+        <!-- Modal body -->
+        <div class="modal-body">
+            <form action="/action_page.php">
+                <div class="mb-4">
+                    <div class="mb-3 mt-3">
+                        <label for="cpf" class="form-label">CPF:</label>
+                        <input type="text" class="form-control" id="cpf" placeholder="Digite seu CPF" name="cpf" required>
+                     </div>
+                        
+                    <div class="mb-3 mt-3">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="pwd">Senha:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Senha" name="pswd" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="pwd">Confirme a senha:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Senha" name="pswd" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="endereco">Endereço:</label>
+                        <input type="text" class="form-control" id="endereco" placeholder="Rua, Avenida, Alameda" name="endereco" required>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col">
+                            <label for="numero">Numero:</label>
+                            <input type="text" class="form-control" id="numero" placeholder="Numero" name="numero" required>
+                        </div>
+                        <div class="col">
+                            <label for="complemento">Complemento:</label>
+                            <input type="text" class="form-control" id="complemento" placeholder="Complemento" name="complemento">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <div class="col">
+                            <label for="cidade">Cidade:</label>
+                            <input type="text" class="form-control" id="cidade" placeholder="Cidade" name="cidade" required>
+                        </div>
+                        <div class="col">
+                            <label for="estado">Estado:</label>
+                            <input type="text" class="form-control" id="estado" placeholder="Estado" name="estado" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="CEP">CEP:</label>
+                        <input type="text" class="form-control" id="CEP" placeholder="CEP" name="CEP" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="./login" class="d-block text-decoration-none">
+                        <button type="submit; button;" class="btn btn-primary">Cadastrar</button>
+                    </a>
+
+                </div>
+                </form>
+            </div>
+    
+            <!-- Modal footer -->
+
+
+        </div>
+    </div>
+</div>
+
+<!--  Modal Da Senha -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+
+            <!-- Cabeça Do Modal -->
+            <div class="modal-header">
+                    <h4 class="modal-title">Solicitar nova senha</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>  
+                <!-- Corpo Do Modal -->
+            <div class="modal-body">
+                <div class="col" style="text-align: justify;">
+                    <p>Identifique-se para receber um e-mail com as instruções e o link para criar uma nova senha.
+                    </p>
+                    
+                </div><br>
+                <div class="col">
+                    <label for="senha">E-mail:</label>
+                    <input type="text" class="form-control" id="senha nova" placeholder="Informe o e-mail cadastrado" name="senha nova">
+                </div>  
+            </div>
+            <!-- Rodapé do Modal -->
+            <div class="modal-footer">
+                <a href="./login" class="d-block text-decoration-none">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Enviar</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div> 

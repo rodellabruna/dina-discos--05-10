@@ -1,0 +1,33 @@
+.preco {
+    font-weight: bold;
+    text-align: right;
+    font-size: 18px;
+    border-right: 1px;
+  }
+
+  .produto {
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .descricao {
+    text-align: justify;
+  }
+
+  .categoria {
+    font-size: 13px;
+  }
+
+  .image-container {
+    height: 300px; /* Altura desejada para todas as imagens */
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: center; /* Para centralizar verticalmente */
+  }

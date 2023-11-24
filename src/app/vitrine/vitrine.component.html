@@ -1,0 +1,55 @@
+<!-- Grid Dos Produtos -->
+<div class="container-fluid" style="background-color:rgb(146, 213, 213)">
+  <div class="container">
+    <h1 class="text-Left"><br>Discos de Vinil</h1><br><br>  
+    <div class="row justify-content-center">
+      <!-- Primeira Foto -->
+      <div *ngFor="let vitrine of lista" class="col-md-3" style="margin: 20px;">
+        <a href="./produto-detalhe" class="d-block text-decoration-none">
+          <img src="../../assets/Foto{{vitrine.id_produto}}.jpg" alt="Disco de Vinil Chico Buarque Vida" class="image-container img img-fluid rounded"><br>
+        </a>
+        <p class="categoria">{{vitrine.categoria}}</p>
+        <p class="produto">{{vitrine.nome}}<br>
+        <p class="preco">R$ {{vitrine.preco}},00</p>
+        <p class="descricao">{{vitrine.descricao}}</p>
+        <button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#carrinho">Comprar</button>
+      </div>
+      <!-- Segunda Foto -->
+      <div class="col-md-3" style="margin: 20px;">
+        <a href="./produto-detalhe" class="d-block text-decoration-none">
+          <img src="../../assets/Foto2.jpg" alt="Disco de Vinil Information Society Repetition" class="image-container img img-fluid rounded"><br>
+        </a> 
+        <p class="categoria">Disco de Vinil</p>
+        <p class="produto">Information Society | Repetition<br>
+        <p class="preco">R$ 70,00</p>
+        <p class="descricao">O álbum "Repetition" é o terceiro álbum de estúdio da banda Information Society, lançado em 1989. Information Society é uma banda de synth-pop e música eletrônica que ganhou popularidade durante a década de 1980 e é conhecida por suas influências da cultura cibernética.</p>
+        <button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#carrinho">Comprar</button>
+      </div>
+      <!-- Terceira Foto -->
+    </div>
+
+
+    <ul class="pagination justify-content-center">
+      <li class="page-item"><a class="page-link" href="#">Primeira</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Próxima</a></li>
+    </ul>
+    <br>
+
+    <div class="offcanvas offcanvas-end" id="carrinho">
+      <div class="offcanvas-header">
+          <h1 class="offcanvas-title">Carrinho</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+      <p>Seu produto foi adicionado ao carrinho.</p>
+      <a href="./cesta" class="d-block text-decoration-none"><br>
+          <button class="btn btn-primary" type="button">Ver meu carrinho</button>
+      </a><br>
+        <button type="button" class="btn" data-bs-dismiss="offcanvas" style="color:black;">Continuar comprando</button>
+    </div>
+
+  </div>
+</div>
